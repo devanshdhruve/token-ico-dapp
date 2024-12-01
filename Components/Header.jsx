@@ -71,11 +71,11 @@ const Header = ({
                       About
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a className="scrollspy-btn" href="#roadmap">
                       RoadMap
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a className="scrollspy-btn" href="#team">
                       Team

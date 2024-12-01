@@ -270,7 +270,8 @@ export const addTokenToMetaMask = async () => {
     const tokenDecimals = tokenDetails?.decimals;
     const tokenAddress = TOKEN_ADDRESS;
     const tokenSymbol = tokenDetails?.symbol;
-    const tokenImage = "";
+    const tokenImage =
+      "https://www.daulathussain.com/wp-content/uploads/2024/05/theblockchaincoders.jpg";
 
     try {
       const wasAdded = await window.ethereum.request({
@@ -299,5 +300,5 @@ export const addTokenToMetaMask = async () => {
   }
 };
 
-const tokenImage =
-  "https://www.daulathussain.com/wp-content/uploads/2024/05/theblockchaincoders.jpg";
+// const tokenImage =
+//   "https://www.daulathussain.com/wp-content/uploads/2024/05/theblockchaincoders.jpg";

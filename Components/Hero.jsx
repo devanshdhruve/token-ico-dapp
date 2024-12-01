@@ -34,13 +34,10 @@ const Hero = ({
       } else {
         setPercentage(percentageNew);
       }
-
-      calculatePercentage();
-
-      const timer = setTimeout(calculatePercentage, 1000);
-
-      return () => clearTimeout(timer);
     };
+    const timer = setTimeout(calculatePercentage, 1000);
+
+    return () => clearTimeout(timer);
   }, [detail]);
 
   const ADD_TOKEN_METAMASK = async () => {
@@ -49,6 +46,8 @@ const Hero = ({
     setLoader(false);
     notifySuccess(response);
   };
+
+  console.log(detail);
   return (
     <section className="hero hero__ico pos-rel">
       <div className="hero__bg" data-background="assets/img/bg/hero_bg.png" />
@@ -95,7 +94,7 @@ const Hero = ({
                     className="progress-bar"
                     role="progressbar"
                     style={{
-                      width: `${percentage}`,
+                      width: `${percentage} %`,
                     }}
                   />
                 </div>

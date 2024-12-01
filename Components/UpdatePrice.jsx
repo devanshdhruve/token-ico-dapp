@@ -35,7 +35,7 @@ const UpdatePrice = ({
 
               <div className="ico-contract__btn text-center mt-10">
                 <button
-                  onClick={() => UPDATE_TOKEN_PRICE(donateFund)}
+                  onClick={() => UPDATE_TOKEN_PRICE(price)}
                   className="thm-btn"
                 >
                   UPDATE PRICE

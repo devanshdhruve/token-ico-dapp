@@ -1,6 +1,10 @@
 import React from "react";
 
-const SideBar = () => {
+const SideBar = ({
+  setOwnerModel,
+
+  ownerModel,
+}) => {
   return (
     <div className="slide-bar">
       <div className="close-mobile-menu">
@@ -47,6 +51,19 @@ const SideBar = () => {
           <li>
             <a href="#contact" className="scrollspy-btn">
               Contact
+            </a>
+          </li>
+          <li>
+            <a
+              className="scrollspy-btn"
+              style={{
+                cursor: "pointer",
+              }}
+              onClick={() =>
+                ownerModel ? setOwnerModel(false) : setOwnerModel(true)
+              }
+            >
+              Tools
             </a>
           </li>
         </ul>
